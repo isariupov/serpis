@@ -1,0 +1,46 @@
+/*Seccion de la Tabla*/
+
+table {
+border-collapse: collapse;
+}
+table, td, th {
+padding:10px;
+border: 1px solid black;    
+}
+.row1{
+background-color:orange;
+color:white;
+}
+.colum1{
+color:white;
+background-color: #26c48d ;
+}
+.grey{
+background-color: lightgray;
+}
+
+.tablaph{
+display:flex;
+flex-direction: row;
+flex-wrap:wrap;
+background-color:white;
+}
+table{
+width:80%;
+}
+.tablaxml{
+    text-align: center;
+    font-family: "Source Sans Pro", 'Courier New', Courier, monospace;
+    font-weight: normal;
+    border-collapse: separate;
+    border: 1px solid black;
+ }
+ td,th {
+  border: 1px solid black;
+}
+ th{
+     background-color: lightskyblue;
+ }
+ td{
+   background-color: lightgoldenrodyellow;
+}

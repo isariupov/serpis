@@ -1,0 +1,154 @@
+* {
+box-sizing: border-box;
+}
+
+body {
+  margin: 10px 10px 10px;
+  }
+  /* Fondo gris toda la pagina
+background-image: linear-gradient(to top, #ecedee 0%, #eceeef 75%, #e7e8e9 100%);
+    min-height: 100vh;
+    font: normal 16px sans-serif;
+    padding: 20px 0;
+}*/
+
+h1{
+ text-align: center;
+    color: darkgreen;
+}
+h3{
+    text-align: center;
+    color: rebeccapurple;
+}
+img{
+width:80%;
+}
+
+.container{
+display:flex;
+/*flex-direction: row;*/
+flex-wrap:wrap;
+background-color: lightgoldenrodyellow;
+   
+} 
+/*https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_flex-wrap_wrap*/
+.articles {
+background-color: lightcyan;
+/*width: 70px;
+margin: 10px;*/
+text-align: center;
+/*line-height: 30px;
+font-size: 12px;*/
+}
+
+
+nav ul {
+display: flex;
+flex-direction: row;
+list-style-type: none;
+margin: 0px;
+padding: 0px;
+}
+.size_icon{
+font-size: 20px;
+}
+.menu_drop>li>a{
+background-color: green;
+color: white;
+padding: 10px;
+display: block;
+text-decoration: none;
+min-width: 10px;
+text-align:left;
+}
+/*Nested list*/
+.menu_drop>li>ul>li>a{
+background-color: green;
+color: white;
+padding: 10px;
+display: block;
+text-decoration: none;
+min-width: 80px;
+text-align:left;
+}
+/*Mouse on top*/
+.menu_drop li>a:hover{
+    color: greenyellow;
+    background-color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px green;
+    }
+/*By default the nested list is hidden*/
+.menu_drop>li>ul{
+display: none;
+position: absolute; /*the dropdown is over the content*/
+}
+/*When you (hovering) roll the cursor over the item, the drop-down-menu appears*/
+.menu_drop>li:hover> ul {
+display:flex;
+flex-direction:column;
+    }
+/* boton desplazar por pagina*/
+.arrowup{
+    width: 35px;
+    height: 35px;   
+}
+
+/*Pie de Pagina*/
+footer {
+    color: brown;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: thin dotted;
+    }
+        
+.menu_pc {
+display: none;
+}
+.menu_movil {
+display:flex;
+    }
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 400px) {
+/* For tablets: */
+.col-s-1 {width: 8.33%;}
+.col-s-2 {width: 16.66%;}
+.col-s-3 {width: 25%;}
+.col-s-4 {width: 33.33%;}
+.col-s-5 {width: 41.66%;}
+.col-s-6 {width: 50%;}
+.col-s-7 {width: 58.33%;}
+.col-s-8 {width: 66.66%;}
+.col-s-9 {width: 75%;}
+.col-s-10 {width: 83.33%;}
+.col-s-11 {width: 91.66%;}
+.col-s-12 {width: 100%;}
+.menu_movil {
+    display: none;
+    }
+.menu_pc {
+    display: flex;
+    }
+}
+@media only screen and (min-width: 768px) {
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+}
+   
