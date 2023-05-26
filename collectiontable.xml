@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plants [ 
+    <!ELEMENT plants (vegetables+)>
+    <!ELEMENT vegetables (name+, seeding+, harvest+, collects+)>
+    <!ELEMENT name (#PCDATA)>
+     <!ELEMENT seeding (#PCDATA)>
+    <!ELEMENT harvest (#PCDATA)>
+    <!ELEMENT collects (#PCDATA)>
+]>
+<plants>
+<vegetables>
+        <name>Garlic</name>
+        <seeding>From October to January</seeding>
+        <harvest>8-4 months</harvest>
+        <collects>September-May</collects>
+</vegetables>
+<vegetables>
+        <name>Celery</name>
+        <seeding>From September to June</seeding>
+        <harvest>4 months	</harvest>
+        <collects>May</collects>
+</vegetables>
+<vegetables>
+        <name>Eggplants</name>
+        <seeding>From January to April</seeding>
+        <harvest>5-6 months</harvest>
+        <collects>June-July</collects>
+</vegetables>
+<vegetables>
+        <name>Borage</name>
+        <seeding>From September to April</seeding>
+        <harvest>2-4 months</harvest>
+        <collects>March-May</collects>
+</vegetables>
+<vegetables>
+        <name>Late Onions</name>
+        <seeding>From December to February</seeding>
+        <harvest>7-8 months</harvest>
+        <collects>August-September</collects>
+</vegetables>
+<vegetables>
+        <name>Chickpeas</name>
+        <seeding>From January to March</seeding>
+        <harvest>5 months	</harvest>
+        <collects>June</collects>
+</vegetables>
+</plants>
